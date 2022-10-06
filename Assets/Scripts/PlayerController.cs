@@ -65,8 +65,14 @@ public class PlayerController : MonoBehaviour
             SetCountText();
 
         }
-        
 
+        if (other.gameObject.CompareTag("JumpPad"))
+        {
+            rb.AddForce(Vector3.up * 15f, ForceMode.Impulse);
+
+
+
+        }
     }
 
 
